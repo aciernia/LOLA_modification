@@ -43,8 +43,8 @@ redefineUserSets=FALSE, direction="enrichment") {
 	annotationDT = regionDB$regionAnno
 	testSetsGRL = regionDB$regionGRL
 
-	if (direction == "depletion") {
-		fisherAlternative = "less"
+	if (direction == "twotail") {
+		fisherAlternative = "two.sided"
 	} else {
 		fisherAlternative = "greater"
 	}
